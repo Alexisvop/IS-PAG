@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 5"><!--Autor-->
+	<script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="stylesheet" href="media/css/contenido.css">
+	<link rel="icon" href="media/img/icono.png">
+</head>
+
+    <section>
+		<br><br><br>
+        <h1>2. Introducción</h1>
+		<br>
+		<h5>En muchos proyectos de software, los fallos no se deben al código, sino a una mala comprensión de los requerimientos.
+            Esta situación genera pérdidas de tiempo, sobrecostos y productos que no cumplen con las expectativas del cliente.
+            Los requerimientos de software son simplemente una descripción de lo que un programa de software en particular debe hacer. Actúan como pautas para que los desarrolladores creen un producto funcional que satisfaga las necesidades de los usuarios. Un ejemplo análogo es, si los cimientos de un edificio son débiles, todo el edificio fallará; lo mismo pasa con el software y sus requerimientos.<br><br>
+
+			Para dar contexto, la ingeniería de requerimientos es una disciplina dentro del desarrollo de software que se enfoca en la identificación, documentación y gestión de los requerimientos del sistema. Su objetivo principal es asegurar que los desarrolladores comprendan completamente lo que se espera del software antes de comenzar a escribir código. Esto implica una comunicación efectiva entre todas las partes interesadas, incluyendo clientes, usuarios finales y desarrolladores.<br><br>
+
+			El proceso de ingeniería de requerimientos generalmente incluye varias etapas clave:<br><br>
+			<ul>
+				<li>Elicitación de requerimientos: Recopilación de información de todas las partes interesadas para entender sus necesidades y expectativas.</li>
+				<li>Análisis de requerimientos: Evaluación y priorización de los requerimientos recopilados para identificar posibles conflictos o inconsistencias.</li>
+				<li>Documentación de requerimientos: Creación de documentos claros y detallados que describan los requerimientos del sistema.</li>
+				<li>Validación de requerimientos: Asegurar que los requerimientos documentados sean correctos, completos y acordados por todas las partes interesadas.</li>
+				<li>Gestión de requerimientos: Monitoreo y control de los cambios en los requerimientos a lo largo del ciclo de vida del proyecto.</li>
+			</ul>
+
+			<br>
+			De acuerdo con ISO (2007) un requisito es una declaración que identifica un atributo, una capacidad o una característica del sistema, que tiene valor y utilidad para el cliente, la organización, el usuario u otra de las partes interesadas . Además, es inequívoca, comprobable, medible y necesaria para la aceptabilidad del producto final . Gestionar requisitos consiste en identificar y sintetizar las funciones requeridas por el sistema, asociadas con el rendimiento y otras medidas de calidad, que proporcionan la base para evaluar las soluciones candidatas y para la verificación del sistema completo . Generalmente, se expresan en un lenguaje técnico útil para estructurar una arquitectura y un diseño inequívocos, consistentes, coherentes, exhaustivos y verificables. Por supuesto, se requiere una estrecha coordinación entre el grupo de trabajo para garantizar una correcta traducción, desde el lenguaje natural de las partes interesadas al formal de los ingenieros, lo que puede garantizar que se mantenga su trazabilidad. Todo esto se traduce en un conjunto de funciones y descripciones de requisitos, en el que se especifican las características de la solución propuesta que se pueden verificar y validar.<br><br>
+
+			<br><br>
+			<div style="text-align: center;">
+				<figure>
+					<img src="media/img/intro.jpg" alt="Hombre escribiendo código en una computadora" style="max-width: 100%; height: auto;"> 
+					<figcaption style="font-size: 14px;">Imagen obtenida de Internet; derechos de autor pueden aplicarse.</figcaption>
+				</figure>
+				<p style="font-size: 14px;">IMAGEN 2. Intercambio de dialogo del personal.</p>
+			</div>			
+			<br><br>
+		</h5>
+    </section>
+	
+	<script>
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => observer.observe(section));
+	</script>
+</body>
+
+
+</html>

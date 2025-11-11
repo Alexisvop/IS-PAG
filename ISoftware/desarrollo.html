@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 1"><!--Autor-->
+	<script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="stylesheet" href="media/css/contenido.css">
+
+
+</head>
+
+<body style="">
+	<br><br><br>
+
+	<h2>3. Desarrollo</h2> <br>
+
+    <section>
+        <h3>3.1. Fundamentos de los Requerimientos</h3>
+
+        <h4>3.1.1. Propósitos y Beneficios Clave</h4>
+        <h5>
+            Un buen levantamiento y gestión de requerimientos es esencial para el éxito de un proyecto, ya que los errores cometidos en esta etapa inicial suelen ser los más costosos de corregir en fases posteriores. Si los requerimientos son incompletos, ambiguos o contradictorios, el software resultante probablemente no cumplirá con las expectativas de los usuarios.<br><br>
+
+            Realizar una buena gestión de requerimientos es crucial para el éxito del proyecto. Por lo que los principales fundamentos de los requerimientos son:<br><br>
+        </h5>
+
+        <h5 align="justify">
+            &emsp;&emsp;1. <b>Alineación:</b> Permiten que todas las partes interesadas (clientes, usuarios, desarrolladores y gerentes de proyecto) comprendan y compartan una visión común del sistema.<br><br>
+
+            &emsp;&emsp;2. <b>Guía:</b> Los requerimientos son la referencia principal para las etapas de diseño, implementación, prueba y mantenimiento.<br><br>
+
+            &emsp;&emsp;3. <b>Validación:</b> Sirven como criterio de evaluación para verificar si el producto final satisface las necesidades planteadas.<br><br>
+
+            &emsp;&emsp;4. <b>Control del alcance:</b> Ayudan a definir los límites del sistema, evitando agregar funcionalidades no planificadas (scope creep).<br><br>
+
+            &emsp;&emsp;5. <b>Gestión de riesgos:</b> Una definición clara de requerimientos reduce la posibilidad de fallos técnicos o malentendidos con el cliente.<br><br>
+        </h5>
+
+        <h4>3.1.2. Requerimientos Funcionales (RF)</h4>
+        <h5>Describen las funciones o servicios que el sistema debe proveer.<br>
+        Algunos ejemplos incluyen:<br><br>
+        </h5>
+
+        <h5 align="justify">
+            &emsp;&emsp;1) <b>Ejemplo 1:</b> "El usuario debe poder iniciar sesión con su correo y contraseña."<br><br>
+            &emsp;&emsp;2) <b>Ejemplo 2:</b> "El sistema debe generar un reporte de ventas mensual en formato PDF."<br><br>
+            &emsp;&emsp;3) <b>Ejemplo 3:</b> "El administrador debe poder agregar o eliminar usuarios del sistema."<br>
+        </h5>
+
+        <h4>3.1.3. Requerimientos No Funcionales (RNF)</h4>
+        <h5>Describen las cualidades, atributos o restricciones del sistema. No se refieren a qué hace, sino a cómo lo hace. Son tan importantes como los funcionales.<br>
+        Por ejemplo:<br><br>
+        </h5>
+
+        <h5 align="justify">
+            &emsp;&emsp;1) <b>Rendimiento:</b> Tiempo de respuesta, capacidad de usuarios concurrentes, etc.<br><br>
+            &emsp;&emsp;2) <b>Seguridad:</b> Autenticación, autorización, cifrado y manejo de datos sensibles.<br><br>
+            &emsp;&emsp;3) <b>Usabilidad:</b> Facilidad de uso, accesibilidad y experiencia de usuario.<br>
+        </h5>
+
+		<div style="text-align: center;">
+            <figure>
+                <img src="media/img/3.1.jpg" alt="Gráfico que representa la estructura de un software" style="max-width: 100%; height: auto;">
+                <figcaption style="font-size: 14px;">Imagen obtenida de Internet; derechos de autor pueden aplicarse.</figcaption>
+            </figure>
+            <p style="font-size: 14px;">IMAGEN 3. Persona indicando los logros.</p>
+        </div>			
+        <br><br>
+
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>3.2. Técnicas de obtención de requerimientos</h3>
+        <h5>
+            Estas técnicas son los métodos clásicos y más establecidos para obtener información de las partes interesadas (stakeholders).
+            <br><br>
+        </h5>
+
+        <h4>3.2.1. Técnicas Tradicionales</h4>
+            <h5 align="justify">
+                &nbsp;&nbsp; <b>Qué es:</b> Conjunto de métodos individuales para obtener información directamente de stakeholders.<br><br>
+            </h5>
+
+            <h4>3.2.1.1 Entrevistas</h4>
+            <h5 align="justify">
+                &nbsp;&nbsp; <b>Qué es:</b> Conversación formal o informal (uno a uno o en grupo pequeño) entre el analista de requerimientos y un stakeholder (cliente, usuario o experto en el dominio).<br><br>
+                &nbsp;&nbsp; <b>Objetivo:</b> Obtener información detallada sobre necesidades, problemas, expectativas y restricciones.<br><br>
+                &nbsp;&nbsp; <b>Tipos comunes:</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp; - Estructuradas: se sigue un guion de preguntas predefinidas.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; - No estructuradas: conversación abierta, útil para explorar temas.<br><br>
+                &nbsp;&nbsp; <b>Ventaja:</b> Permite profundizar y captar matices.<br><br>
+                &nbsp;&nbsp; <b>Desventaja:</b> Consume tiempo y depende de la habilidad del entrevistador.<br><br>
+            </h5>
+
+            <h4>3.2.1.2 Cuestionarios y Encuestas</h4>
+            <h5 align="justify">
+                &nbsp;&nbsp; <b>Qué es:</b> Conjunto de preguntas escritas (abiertas o de opción múltiple) distribuidas a grupos grandes y dispersos.<br><br>
+                &nbsp;&nbsp; <b>Objetivo:</b> Recopilar gran cantidad de datos eficientemente, validar supuestos o medir frecuencias.<br><br>
+                &nbsp;&nbsp; <b>Ventaja:</b> Escalables, económicos y permiten análisis estadístico.<br><br>
+                &nbsp;&nbsp; <b>Desventaja:</b> No permiten repreguntas y preguntas mal formuladas generan datos inútiles.<br><br>
+            </h5>
+
+            <h4>3.2.1.3 Observación Directa</h4>
+            <h5 align="justify">
+                &nbsp;&nbsp; <b>Qué es:</b> El analista observa a los usuarios realizando sus tareas en su entorno real (shadowing).<br><br>
+                &nbsp;&nbsp; <b>Objetivo:</b> Entender el proceso "As-Is" e identificar requisitos ocultos: atajos, tareas no mencionadas o problemas cotidianos.<br><br>
+                &nbsp;&nbsp; <b>Ventaja:</b> Información precisa sobre la realidad del trabajo.<br><br>
+                &nbsp;&nbsp; <b>Desventaja:</b> Puede intimidar al usuario (efecto Hawthorne) y es demandante en tiempo.<br><br>
+            </h5>
+
+            <h4>3.2.1.4 Análisis de Documentación</h4>
+            <h5 align="justify">
+                &nbsp;&nbsp; <b>Qué es:</b> Revisión sistemática de material escrito existente relacionado con el sistema o proceso actual.<br><br>
+                &nbsp;&nbsp; <b>Objetivo:</b> Entender el contexto del negocio, reglas, políticas, restricciones y especificaciones del sistema "As-Is".<br><br>
+                &nbsp;&nbsp; <b>Ejemplos:</b> Manuales de usuario, reportes de incidencias, organigramas, glosarios y especificaciones previas.<br><br>
+                &nbsp;&nbsp; <b>Ventaja:</b> Fuente objetiva que ayuda a preparar entrevistas u otras técnicas.<br><br>
+                &nbsp;&nbsp; <b>Desventaja:</b> La documentación puede estar desactualizada, incompleta o contradictoria.<br><br>
+            </h5>
+
+        <hr>
+
+        <h4>3.2.2. Técnicas Colaborativas</h4>
+        <h5>
+            Estos métodos buscan involucrar activamente a un grupo de stakeholders para trabajar juntos en la definición de requisitos.
+            <br><br>
+        </h5>
+
+        <h4>3.2.2.1 Talleres de Trabajo (Workshops)</h4>
+        <h5 align="justify">
+            &nbsp;&nbsp; <b>Qué es:</b> Reunión estructurada y facilitada que reúne a stakeholders clave (clientes, usuarios, desarrolladores, gerentes).<br><br>
+            &nbsp;&nbsp; <b>Objetivo:</b> Discutir, definir, priorizar y llegar a consensos sobre requisitos en tiempo real (ej. JAD).<br><br>
+            &nbsp;&nbsp; <b>Ventaja:</b> Acelera decisiones, resuelve conflictos y genera sentido de propiedad del proyecto.<br><br>
+            &nbsp;&nbsp; <b>Desventaja:</b> Requiere planificación logística y un facilitador hábil.<br><br>
+        </h5>
+
+        <h4>3.2.2.2 Tormenta de Ideas (Brainstorming)</h4>
+        <h5 align="justify">
+            &nbsp;&nbsp; <b>Qué es:</b> Técnica grupal para generar muchas ideas sin juicio.<br><br>
+            &nbsp;&nbsp; <b>Objetivo:</b> Explorar alternativas antes de filtrarlas o evaluarlas.<br><br>
+            &nbsp;&nbsp; <b>Fases:</b> 1) Generación de ideas (cantidad) 2) Discusión y filtrado.<br><br>
+            &nbsp;&nbsp; <b>Ventaja:</b> Fomenta creatividad y soluciones innovadoras.<br><br>
+            &nbsp;&nbsp; <b>Desventaja:</b> Puede ser dominada por participantes con mayor voz si no se modera.<br><br>
+        </h5>
+
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>3.2.3. Técnicas Visuales e Interactivas</h3>
+        <h5>
+            Métodos que usan representaciones visuales o modelos tempranos para facilitar comunicación y validación.
+            <br><br>
+        </h5>
+
+        <h4>3.2.3.1. Prototipado</h4>
+        <h5 align="justify">
+            &nbsp;&nbsp; <b>Qué es:</b> Creación de una versión preliminar o maqueta del software (no producto final).<br><br>
+            &nbsp;&nbsp; <b>Objetivo:</b> Validar requisitos con usuarios y responder "¿es esto lo que querías?". Permite probar el sistema antes del desarrollo final.<br><br>
+            &nbsp;&nbsp; <b>Tipos:</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - Baja fidelidad: bocetos en papel o wireframes simples (rápidos y económicos).<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - Alta fidelidad: maquetas interactivas (Figma, Axure) que simulan el producto real.<br><br>
+            &nbsp;&nbsp; <b>Ventaja:</b> Reduce riesgo de malentendidos y es barato cambiar un prototipo.<br><br>
+            &nbsp;&nbsp; <b>Desventaja:</b> El cliente puede confundir un prototipo de alta fidelidad con el producto final.<br><br>
+        </h5>
+
+        <h4>3.2.3.2. Historias de Usuario</h4>
+        <h5 align="justify">
+            &nbsp;&nbsp; <b>Qué es:</b> Descripción breve del requisito desde la perspectiva del usuario final, empleada en metodologías ágiles.<br><br>
+            &nbsp;&nbsp; <b>Formato:</b> "Como <b>[tipo de usuario]</b>, quiero <b>[acción]</b> para <b>[beneficio]</b>".<br><br>
+            &nbsp;&nbsp; <b>Ejemplo:</b> "Como <b>cliente</b>, quiero agregar un producto al carrito para poder comprarlo más tarde".<br><br>
+            &nbsp;&nbsp; <b>Objetivo:</b> Centrar al equipo en el valor entregado al usuario; base para planificación en Scrum.<br><br>
+            &nbsp;&nbsp; <b>Ventaja:</b> Fáciles de entender y útiles para priorizar y planificar iterativamente.<br><br>
+            &nbsp;&nbsp; <b>Desventaja:</b> Deben complementarse con criterios de aceptación que definan el comportamiento esperado.<br><br>
+        </h5>
+    </section>
+
+	<section>
+		<hr>
+
+		<h3>3.3. Proceso de Ingeniería de Requisitos</h3>
+		<h5>
+			La Ingeniería de Requisitos (IR) es la base sobre la cual se construye el éxito de cualquier proyecto de desarrollo de software o sistemas. Es un proceso estructurado que abarca todo el ciclo de vida del proyecto, desde la idea inicial hasta la comercialización y el mantenimiento. Su propósito fundamental es capturar, analizar, documentar y gestionar eficazmente las necesidades de todos los stakeholders.   
+
+			La importancia crítica de esta disciplina radica en su capacidad para prevenir el fracaso del proyecto. Los requisitos mal definidos, incompletos o gestionados de forma inadecuada son una de las principales causas de fracaso, lo que conduce directamente a retrasos, repetición de trabajos, sobrecostos presupuestarios y productos de baja calidad que no satisfacen las necesidades reales de los usuarios o del negocio.
+			<br><br>
+		</h5>
+
+		<h4>3.3.1 Fases del Proceso</h4>
+		<h5 align="justify">
+			&nbsp;&nbsp; Gestionar la Complejidad: Especialmente en el desarrollo de productos inteligentes y conectados, donde los requisitos de hardware, software y eléctricos deben integrarse.<br><br>
+			&nbsp;&nbsp; Optimizar la Comercialización: Un proceso de IR ágil y eficiente puede reducir los ciclos de producto y acelerar el tiempo de comercialización.<br><br>
+			&nbsp;&nbsp; Mejorar la Calidad: Al garantizar la alineación, la calidad del software, la funcionalidad, la facilidad de uso y la confiabilidad mejoran drásticamente.<br><br>
+			&nbsp;&nbsp; Crear un Acuerdo Común: Según Boehm, la IR busca desarrollar una especificación completa, consistente y no ambigua que sirva como base para acuerdos comunes entre todas las partes involucradas.<br><br>
+		</h5>
+
+		<h4>3.3.2 Técnicas de Documentación</h4>
+		<h4>3.3.2.3 Especificación de Requisitos de Software (ERS / SRS)</h4>
+        <h5 align="justify">
+            &nbsp;&nbsp; <b>Qué es:</b> Documento formal y tradicional que describe en detalle los requisitos del sistema; actúa como un "contrato" entre cliente y equipo de desarrollo. Frecuentemente se basa en estándares como el IEEE 830.<br><br>
+            &nbsp;&nbsp; <b>Estructura típica:</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Introducción:</b> propósito, alcance y definiciones.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Descripción general:</b> contexto del producto, funciones y características de los usuarios.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Requisitos específicos:</b> el núcleo del documento.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Requisitos funcionales:</b> lo que el sistema debe hacer (ej.: "El sistema debe permitir al usuario registrarse con correo y contraseña").<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Requisitos no funcionales:</b> cómo debe ser el sistema (rendimiento, seguridad, usabilidad, mantenibilidad).<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Apéndices:</b> referencias, glosario y anexos.<br><br>
+            &nbsp;&nbsp; <b>Uso:</b> Base para diseño, pruebas y aceptación; referencia en gestión de cambios y trazabilidad.<br><br>
+        </h5>
+
+		<h4>3.3.2.3 Casos de Uso (UML)</h4>
+        <h5 align="justify">
+            &nbsp;&nbsp; <b>Qué es:</b> Técnica para capturar requisitos funcionales mediante descripciones de interacciones entre actores y el sistema. Se usan diagramas UML para visualizar relaciones.<br><br>
+            &nbsp;&nbsp; <b>Componentes:</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Actor:</b> entidad externa que inicia la interacción (usuario o sistema externo).<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Caso de Uso:</b> la funcionalidad (ej.: "Registrar Usuario").<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Flujo principal:</b> secuencia exitosa de pasos (camino feliz).<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Flujos alternativos:</b> excepciones o rutas alternativas ante errores o decisiones.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Visualización:</b> diagramas de casos de uso UML que muestran actores y relaciones con los casos de uso.<br><br>
+            &nbsp;&nbsp; <b>Ventaja:</b> Facilita la comunicación entre stakeholders y sirve de base para especificaciones detalladas y pruebas de aceptación.<br><br>
+        </h5>
+
+		<h4>3.3.3 Validación y Verificación</h4>
+		<h4>3.3.3.1 Validación</h4>
+        <h5 align="justify">
+            &nbsp;&nbsp; <b>Pregunta clave:</b> "¿Estamos construyendo el producto correcto?"<br><br>
+            &nbsp;&nbsp; La validación asegura que los requisitos definidos y documentados coincidan con las necesidades reales del cliente. Responde a la pregunta: "¿Es esto lo que el cliente quería?".<br><br>
+            &nbsp;&nbsp; <b>Cuándo:</b> Principalmente al final de la fase de especificación (antes de diseñar), aunque también de forma continua durante el proyecto.<br><br>
+            &nbsp;&nbsp; <b>Técnicas de validación:</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Revisiones y Recorridos (Walkthroughs):</b> Equipo y stakeholders (incluido el cliente) leen y recorren el ERS para detectar errores, omisiones o ambigüedades.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Prototipado:</b> Crear maquetas o mockups y presentarlas al cliente para validar interfaz y flujo de usuario.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Simulación:</b> Modelar el comportamiento del sistema para verificar si cumple los objetivos de negocio.<br><br>
+        </h5>
+
+		<h4>3.3.3.2 Verificación</h4>
+        <h5 align="justify">
+            &nbsp;&nbsp; <b>Pregunta clave:</b> "¿Estamos construyendo el producto correctamente?"<br><br>
+            &nbsp;&nbsp; La verificación asegura que el producto de una fase (en este caso el documento de requisitos) cumple con los estándares, reglas y calidad esperada. Responde a la pregunta: "¿El documento de requisitos está bien escrito?".<br><br>
+            &nbsp;&nbsp; <b>Cuándo:</b> Durante la creación del ERS y mientras se documentan los requisitos.<br><br>
+            &nbsp;&nbsp; <b>Técnicas de verificación:</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Inspecciones:</b> Revisiones formales por pares que buscan problemas específicos en la redacción y estructura del documento.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Análisis de calidad del requisito:</b> Verificar que cada requisito sea:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • <b>Completo:</b> contiene toda la información necesaria.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • <b>Consistente:</b> no contradice otros requisitos.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • <b>No ambiguo:</b> interpretación única y clara.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • <b>Verificable (Testable):</b> puede probarse objetivamente.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • <b>Factible (Viable):</b> puede implementarse con recursos y tecnología disponibles.<br><br>
+            &nbsp;&nbsp; Estas técnicas ayudan a garantizar calidad, trazabilidad y preparación para las fases de diseño, prueba y aceptación.
+        </h5>
+
+		<div style="text-align: center;">
+            <figure>
+                <img src="media/img/VyV.jpg" alt="Gráfico que representa la estructura de un software" style="max-width: 100%; height: auto;">
+                <figcaption style="font-size: 14px;">Imagen obtenida de Internet; derechos de autor pueden aplicarse.</figcaption>
+            </figure>
+            <p style="font-size: 14px;">IMAGEN 3. Persona indicando los logros.</p>
+        </div>
+
+	</section>
+
+	<section>
+		<hr>
+
+		<h3>3.4. Gestión de Requisitos</h3>
+		<h5>
+			La gestión de requisitos es una disciplina crítica dentro del proceso de desarrollo de software que se enfoca en la administración continua de los requisitos a lo largo del ciclo de vida del proyecto. Dado que los requisitos pueden cambiar debido a factores como la evolución del mercado, nuevas tecnologías o cambios en las necesidades del cliente, es esencial contar con un enfoque estructurado para gestionar estos cambios y asegurar que el producto final cumpla con las expectativas.
+			<br><br>
+			
+			ISO 15489 (Gestión de Documentos): Este es el estándar técnico clave. La Parte 1 define los conceptos y principios, mientras que la Parte 2 proporciona las directrices de implementación. La ISO 15489 establece los cuatro principios que deben regir a un documento fiable: Autenticidad (es lo que dice ser), Fiabilidad (es una representación completa y precisa), Integridad (no ha sido alterado) y Usabilidad (puede ser localizado, recuperado y entendido). <!-- https://erp.iesap.edu.pe/upload/avt2024071109412118077phpxdsyjd6.pdf -->
+
+		</h5>
+
+		<h4>3.4.1 Control de cambios</h4>
+		<h5 align="justify">
+			&nbsp;&nbsp; <b>Qué es:</b> Proceso sistemático para manejar modificaciones en los requisitos después de su aprobación inicial.<br><br>
+			&nbsp;&nbsp; <b>Objetivo:</b> Asegurar que todos los cambios sean evaluados, aprobados y documentados adecuadamente para minimizar impactos negativos en el proyecto.<br><br>
+			&nbsp;&nbsp; <b>Pasos clave:</b><br>
+			&nbsp;&nbsp;&nbsp;&nbsp; - <b>Solicitud de cambio:</b> Cualquier stakeholder puede proponer un cambio mediante una solicitud formal.<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; - <b>Evaluación del cambio:</b> Un comité o responsable evalúa el impacto del cambio en alcance, tiempo, costo y calidad.<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; - <b>Aprobación o rechazo:</b> Basado en la evaluación, se decide si implementar el cambio.<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; - <b>Implementación:</b> Si se aprueba, se actualizan los documentos de requisitos y se comunica a todo el equipo.<br><br>
+		</h5>
+
+		<h4>3.4.2 Trazabilidad</h4>
+		<h5 align="justify">
+			&nbsp;&nbsp; <b>Qué es:</b> La trazabilidad de requisitos es el mecanismo que permite controlar y seguir la vida de un requisito, tanto hacia adelante como hacia atrás, a través de todo el proceso de desarrollo. Es la base de la gestión de requisitos y la manifestación más clara de la gobernanza documental aplicada a la Ingeniería de Requisitos.<br><br>
+
+            &nbsp;&nbsp; <b>Matriz de Trazabilidad de Requisitos (RTM):</b> El artefacto documental clave que materializa la trazabilidad. En su forma más simple, es una tabla (hoja de cálculo o función dentro de una herramienta ALM) que mapea los requisitos contra otros artefactos (diseño, casos de prueba, código, entregables).<br><br>
+
+            &nbsp;&nbsp; <b>Trazabilidad Bidireccional:</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Trazabilidad Hacia Adelante (Forward):</b> Vincula cada requisito con sus artefactos de implementación y verificación. Responde a: "¿Este requisito ha sido implementado y probado?"<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; - <b>Trazabilidad Hacia Atrás (Backward):</b> Vincula elementos de diseño, código y pruebas de vuelta a los requisitos originales. Responde a: "¿Por qué existe este código? ¿Qué requisito satisface?"<br><br>
+
+            &nbsp;&nbsp; Una RTM eficaz facilita impacto de cambios, auditorías, pruebas de regresión y demuestra cumplimiento con requisitos regulatorios o contractuales.	<br><br>
+		</h5>
+		<div style="text-align: center;">
+			<figure>
+				<img src="media/img/gestion.jpg" alt="Gráfico que representa la estructura de un software" style="max-width: 100%; height: auto;">
+				<figcaption style="font-size: 14px;">Imagen obtenida de Internet; derechos de autor pueden aplicarse.</figcaption>
+			</figure>
+			<p style="font-size: 14px;">IMAGEN 3. Persona indicando los logros.</p>
+		</div>
+		
+		<h4>3.4.3 Herramientas de Gestión de Requisitos</h4>
+		<h5>
+			Las herramientas de gestión de requisitos son software especializados que ayudan a capturar, organizar, rastrear y gestionar los requisitos a lo largo del ciclo de vida del proyecto. Estas herramientas facilitan la colaboración entre equipos, mejoran la trazabilidad y aseguran que los cambios en los requisitos se gestionen de manera efectiva.
+			<br><br>
+		</h5>
+
+		<h4>3.4.3.1 Ejemplos de Herramientas Populares</h4>
+		<h5 align="justify">
+			&nbsp;&nbsp; <b>JIRA:</b> Plataforma ampliamente utilizada para la gestión ágil de proyectos que incluye funcionalidades para rastrear requisitos, tareas y errores.<br><br>
+			&nbsp;&nbsp; <b>Confluence:</b> Herramienta de colaboración que permite documentar y compartir requisitos entre equipos.<br><br>
+			&nbsp;&nbsp; <b>IBM Rational DOORS:</b> Solución robusta para la gestión de requisitos en proyectos complejos, con capacidades avanzadas de trazabilidad.<br><br>
+			&nbsp;&nbsp; <b>ReqView:</b> Herramienta ligera para la captura y gestión de requisitos con soporte para trazabilidad y generación de informes.<br><br>
+		</h5>
+
+	</section>
+
+	<script>
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => observer.observe(section));
+	</script>
+
+</body>
+
+
+</html>

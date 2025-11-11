@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="Author" content="Equipo 5"/>
+        <meta name="Description" content="Estudio General del Sistema"/>
+        <meta name="Keywords" content="Factores, Estudio, General, Sistema"/>
+        <meta name="robots" content="noindex, nofollow"/>
+        <script src="media/js/jq.js" type="text/javascript"></script>
+        <script src="media/js/m.js" type="text/javascript"></script>
+        <script src="media/js/ui.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="media/css/ui.css" type="text/css"/>
+        <link rel="stylesheet" href="media/css/ejemplos.css"> 
+    </head>
+
+
+    <section class="main clear">
+        <section class="top">
+            <img src="img/ejemBK.html" class="media" alt=""/>
+            <div class="wrapper content_header clear">
+                <center>
+                    <h1 class="title">
+                        <br>4. Ejemplos 
+                    </h1>
+                </center>
+            </div>
+        </section>
+        <section class="wrapper">
+            <div class="content">
+                <ul class="example-block">
+                    <p class="separator">━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <h2>
+                        <v>4.1.1. Sistema de Gestión de Biblioteca Universitaria</v>
+                    </h2>
+                    
+                    <div class="content-block">
+                        <h5>1. Planteamiento del Problema:</h5>
+                        <p>La biblioteca de la "Universidad del Valle" maneja sus préstamos y devoluciones de libros de forma manual, con registros en papel. Esto genera los siguientes problemas:</p>
+                        <ul>
+                            <li>Pérdida de registros de préstamos.</li>
+                            <li>Retrasos en la renovación de libros.</li>
+                            <li>Dificultad para consultar la disponibilidad de un libro en tiempo real.</li>
+                            <li>No hay un control eficiente de multas por retrasos.</li>
+                        </ul>
+                        <p><strong>Consecuencia:</strong> Los estudiantes y bibliotecarios están insatisfechos, y se requiere un sistema de software para automatizar los procesos.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h5>2. Obtención de Requerimientos (Técnicas Aplicadas)</h5>
+                        
+                        <h6>a) Entrevistas (Semiestructuradas)</h6>
+                        <ul>
+                            <li><strong>Entrevistados:</strong> Bibliotecario jefe, asistente de biblioteca, estudiantes frecuentes.</li>
+                            <li><strong>Preguntas clave:</strong>
+                                <ul>
+                                    <li>¿Qué procesos les gustaría automatizar?</li>
+                                    <li>¿Qué información debe mostrar el sistema al buscar un libro?</li>
+                                    <li>¿Cómo manejan actualmente las multas?</li>
+                                </ul>
+                            </li>
+                            <li><strong>Hallazgos:</strong>
+                                <ul>
+                                    <li>Necesidad de un catálogo en línea.</li>
+                                    <li>Control automático de multas.</li>
+                                    <li>Notificaciones por correo electrónico para recordatorios de devolución.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h6>b) Observación Directa</h6>
+                        <ul>
+                            <li><strong>Actividades observadas:</strong>
+                                <ul>
+                                    <li>Proceso de préstamo: El bibliotecario busca en un archivo de Excel si el libro está disponible, luego llena una ficha de préstamo.</li>
+                                    <li>Devolución: Verifica la fecha de devolución y calcula manualmente las multas.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Requerimiento identificado:</strong> El sistema debe calcular automáticamente las multas según los días de retraso.</li>
+                        </ul>
+
+                        <h6>c) Prototipado</h6>
+                        <ul>
+                            <li><strong>Herramienta:</strong> Figma.</li>
+                            <li><strong>Prototipo de pantalla de búsqueda:</strong>
+                                <ul>
+                                    <li>Campo de búsqueda por título, autor o ISBN.</li>
+                                    <li>Resultados que muestran: título, autor, estante, disponibilidad (Sí/No).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Feedback del usuario:</strong> Solicitaron incluir un filtro por categoría (ej.: "Ciencia Ficción").</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h5>3. Requerimientos Documentados</h5>
+                        
+                        <h6>Requerimientos Funcionales (RF)</h6>
+                        <ul class="requirements-list">
+                            <li><strong>RF-001:</strong> El sistema debe permitir a los usuarios buscar libros por título, autor, ISBN o categoría.</li>
+                            <li><strong>RF-002:</strong> El sistema debe permitir el préstamo de libros solo si el usuario no tiene multas pendientes.</li>
+                            <li><strong>RF-003:</strong> El sistema debe calcular automáticamente multas por retraso ($1 por día).</li>
+                            <li><strong>RF-004:</strong> El sistema debe enviar un correo electrónico de recordatorio 2 días antes de la fecha de devolución.</li>
+                            <li><strong>RF-005:</strong> El bibliotecario debe poder agregar, editar o eliminar libros del catálogo.</li>
+                        </ul>
+
+                        <h6>Requerimientos No Funcionales (RNF)</h6>
+                        <ul class="requirements-list">
+                            <li><strong>RNF-001 (Rendimiento):</strong> La búsqueda de libros debe devolver resultados en menos de 3 segundos.</li>
+                            <li><strong>RNF-002 (Seguridad):</strong> Las contraseñas de los usuarios deben almacenarse cifradas con bcrypt.</li>
+                            <li><strong>RNF-003 (Usabilidad):</strong> Un usuario debe poder realizar un préstamo en menos de 4 clics.</li>
+                            <li><strong>RNF-004 (Fiabilidad):</strong> El sistema debe estar disponible el 99.5% del tiempo en horario de biblioteca (7:00 a 22:00).</li>
+                            <li><strong>RNF-005 (Portabilidad):</strong> El sistema debe ser accesible desde Chrome, Edge y Safari.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h5>4. Validación y Priorización</h5>
+                        <ul>
+                            <li><strong>Taller de trabajo con stakeholders:</strong> Se priorizaron los RF-001 y RF-003 como críticos para la primera versión.</li>
+                            <li><strong>Historias de usuario creadas:</strong>
+                                <ul>
+                                    <li>Como estudiante, quiero buscar libros por autor, para encontrar rápidamente material de estudio.</li>
+                                    <li>Como bibliotecario, quiero que el sistema calcule multas automáticamente, para ahorrar tiempo y reducir errores.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+                <ul class="example-block">
+                    <p class="separator">━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <h2>
+                        <v>4.1.2. Aplicación Móvil de Delivery de Comida</v>
+                    </h2>
+
+                    <div class="content-block">
+                        <h5>1. Planteamiento del Problema</h5>
+                        <p>Un restaurante local "Sabor Casero" quiere expandir sus ventas mediante una aplicación móvil. Actualmente, los pedidos se reciben por teléfono, lo que genera:</p>
+                        <ul>
+                            <li>Errores en los pedidos por malentendidos.</li>
+                            <li>Falta de seguimiento al estado del pedido.</li>
+                            <li>Pérdida de clientes por no ofrecer un servicio moderno.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h5>2. Obtención de Requerimientos (Técnicas Aplicadas)</h5>
+                        
+                        <h6>a) Cuestionarios o Encuestas</h6>
+                        <ul>
+                            <li><strong>Preguntas para clientes frecuentes:</strong>
+                                <ul>
+                                    <li>¿Qué funcionalidades esperaría en una app de delivery?</li>
+                                    <li>¿Prefiere pagar en línea o en efectivo?</li>
+                                    <li>¿Le gustaría recibir notificaciones sobre ofertas?</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resultados:</strong> 80% prefiere pago en línea; 60% quiere seguimiento en tiempo real del pedido.</li>
+                        </ul>
+
+                        <h6>b) Tormenta de Ideas (Brainstorming)</h6>
+                        <ul>
+                            <li><strong>Participantes:</strong> Dueño del restaurante, chef, repartidor, desarrollador.</li>
+                            <li><strong>Ideas generadas:</strong>
+                                <ul>
+                                    <li>Sistema de puntos por compras recurrentes.</li>
+                                    <li>Opción de personalizar platos (ej.: sin picante).</li>
+                                    <li>Integración con Google Maps para seguimiento de repartidores.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Filtrado:</strong> Se descartó "sistema de puntos" por complejidad en la primera versión.</li>
+                        </ul>
+
+                        <h6>c) Historias de Usuario</h6>
+                        <ul>
+                            <li><strong>Ejemplo detallado:</strong></li>
+                            <li><strong>Título:</strong> Seguimiento de pedido en tiempo real.</li>
+                            <li>Como cliente, quiero ver en un mapa la ubicación de mi repartidor, para saber cuándo llegará mi pedido.</li>
+                            <li><strong>Criterios de aceptación:</strong>
+                                <ol style="list-style-type: decimal; padding-left: 20px; margin-top: 10px;">
+                                    <li>La app debe mostrar un mapa con la ubicación en tiempo real del repartidor.</li>
+                                    <li>El repartidor debe actualizar su estado ("En camino", "Entregado").</li>
+                                    <li>La actualización de la ubicación debe ser cada 30 segundos.</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h5>3. Requerimientos Documentados</h5>
+                        
+                        <h6>Requerimientos Funcionales (RF)</h6>
+                        <ul class="requirements-list">
+                            <li><strong>RF-001:</strong> La app debe permitir al usuario registrarse con correo electrónico y contraseña.</li>
+                            <li><strong>RF-002:</strong> La app debe mostrar un menú con categorías (ej.: "Entradas", "Platos Fuertes").</li>
+                            <li><strong>RF-003:</strong> El usuario debe poder personalizar su plato (ej.: agregar o quitar ingredientes).</li>
+                            <li><strong>RF-004:</strong> La app debe integrarse con un sistema de pago en línea (ej.: PayPal).</li>
+                            <li><strong>RF-005:</strong> El usuario debe recibir notificaciones push sobre el estado de su pedido (Confirmado, En preparación, En camino, Entregado).</li>
+                        </ul>
+
+                        <h6>Requerimientos No Funcionales (RNF)</h6>
+                        <ul class="requirements-list">
+                            <li><strong>RNF-001 (Rendimiento):</strong> La app debe cargar el menú en menos de 2 segundos.</li>
+                            <li><strong>RNF-002 (Seguridad):</strong> Los datos de pago deben transmitirse usando TLS 1.3.</li>
+                            <li><strong>RNF-003 (Usabilidad):</strong> Un usuario nuevo debe poder hacer un pedido en menos de 5 minutos.</li>
+                            <li><strong>RNF-004 (Portabilidad):</strong> La app debe funcionar en Android (versión 10+) e iOS (versión 14+).</li>
+                            <li><strong>RNF-005 (Escalabilidad):</strong> La app debe soportar hasta 5000 usuarios simultáneos sin degradación del rendimiento.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h5>4. Validación y Control de Alcance</h5>
+                        <ul>
+                            <li><strong>Prototipado interactivo:</strong> Se usó Marvel App para simular el flujo de pedido.</li>
+                            <li><strong>Feedback:</strong> Los usuarios sugirieron agregar un historial de pedidos.</li>
+                            <li><strong>Control de alcance:</strong> Se pospuso "historial de pedidos" para la versión 2.0, priorizando las funcionalidades básicas.</li>
+                        </ul>
+                    </div>
+                </ul>
+
+                <ul class="example-block">
+                    <p class="separator">━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <h2>
+                        <v>4.1.3. Sistema de Gestión de Incidencias para Soporte Técnico</v>
+                    </h2>
+                    
+                    <div class="content-block">
+                        <h5>1. Planteamiento del Problema</h5>
+                        <p>La empresa "Tech Solutions" ofrece soporte técnico a sus clientes, pero actualmente no tiene un sistema formal para gestionar las incidencias reportadas. Los problemas incluyen:</p>
+                        <ul>
+                            <li>Pérdida de seguimiento de incidencias.</li>
+                            <li>Dificultad para priorizar y asignar tareas al equipo de soporte.</li>
+                            <li>Falta de informes sobre el rendimiento del equipo.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h5>2. Obtención de Requerimientos (Técnicas Aplicadas)</h5>
+                        
+                        <h6>a) Análisis de Documentación Existente</h6>
+                        <ul>
+                            <li><strong>Documentos revisados:</strong> Planillas de Excel con incidencias, correos de clientes.</li>
+                            <li><strong>Hallazgos:</strong>
+                                <ul>
+                                    <li>40% de las incidencias son repetitivas (ej.: "Error 404 en la web").</li>
+                                    <li>No hay un registro del tiempo promedio de resolución.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h6>b) Talleres de Trabajo (Workshops)</h6>
+                        <ul>
+                            <li><strong>Participantes:</strong> Gerente de soporte, técnicos, clientes clave.</li>
+                            <li><strong>Actividades:</strong>
+                                <ul>
+                                    <li>Lluvia de ideas para categorizar incidencias (Críticas, Altas, Medias, Bajas).</li>
+                                    <li>Definición de flujo: Recepción → Asignación → Resolución → Cierre.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Acuerdos:</strong> Se priorizó la automatización de la asignación por área técnica.</li>
+                        </ul>
+
+                        <h6>c) Historias de Usuario</h6>
+                        <ul>
+                            <li><strong>Ejemplo:</strong></li>
+                            <li>Como técnico, quiero recibir notificaciones de incidencias asignadas, para resolverlas rápidamente.</li>
+                            <li><strong>Criterios de aceptación:</strong>
+                                <ol style="list-style-type: decimal; padding-left: 20px; margin-top: 10px;">
+                                    <li>El sistema debe asignar incidencias automáticamente según la especialidad del técnico (ej.: red, base de datos).</li>
+                                    <li>El técnico debe recibir un correo con los detalles de la incidencia.</li>
+                                    <li>El sistema debe permitir al técnico actualizar el estado de la incidencia (En progreso, Resuelto, Cerrado).</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h5>3. Requerimientos Documentados</h5>
+                        
+                        <h6>Requerimientos Funcionales (RF)</h6>
+                        <ul class="requirements-list">
+                            <li><strong>RF-001:</strong> El sistema debe permitir a los clientes registrar incidencias por correo electrónico o mediante un formulario web.</li>
+                            <li><strong>RF-002:</strong> El sistema debe categorizar automáticamente las incidencias según palabras clave (ej.: "lentitud" → Baja, "caída" → Crítica).</li>
+                            <li><strong>RF-003:</strong> El sistema debe generar reportes mensuales con métricas: tiempo promedio de resolución, incidencias por técnico.</li>
+                            <li><strong>RF-004:</strong> El administrador debe poder asignar incidencias manualmente a técnicos específicos.</li>
+                        </ul>
+
+                        <h6>Requerimientos No Funcionales (RNF)</h6>
+                        <ul class="requirements-list">
+                            <li><strong>RNF-001 (Fiabilidad):</strong> El sistema debe tener una disponibilidad del 99.9% en horario laboral (8:00 a 18:00).</li>
+                            <li><strong>RNF-002 (Rendimiento):</strong> La carga de reportes debe tomar menos de 10 segundos.</li>
+                            <li><strong>RNF-003 (Seguridad):</strong> Solo los técnicos y administradores autorizados pueden acceder a las incidencias.</li>
+                            <li><strong>RNF-004 (Usabilidad):</strong> Los técnicos deben poder actualizar el estado de una incidencia en menos de 2 minutos.</li>
+                            <li><strong>RNF-005 (Mantenibilidad):</strong> El sistema debe permitir la adición de nuevas categorías de incidencias sin necesidad de reprogramación.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h5>4. Gestión de Riesgos</h5>
+                        <ul>
+                            <li><strong>Riesgo identificado:</strong> Los clientes podrían no adaptarse al nuevo sistema.</li>
+                            <li><strong>Mitigación:</strong> Se incluyó un manual de usuario y capacitación en línea.</li>
+                            <li><strong>Seguimiento:</strong> Se programaron reuniones semanales con el cliente para ajustar requerimientos.</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <script>
+        // Este script no necesita cambios, funcionará bien.
+        const items = document.querySelectorAll(".content ul.example-block"); // Ajustado para ser más específico
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+            });
+        }, { threshold: 0.2 });
+
+        items.forEach(i => observer.observe(i));
+    </script>
+
+
+
+</html>
