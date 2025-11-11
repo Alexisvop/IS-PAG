@@ -64,38 +64,23 @@ html body {
 @media all and (min-width:0) {
   html body { background: none; }  /* IE9-IE10pp4 */
 }
-section,
-aside,
-nav,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-span {
+
+section, aside, nav, div, h1, h2, h3, h4, h5, h6,p, a, span {
   font-family: 'Myr', sans-serif;
   font-weight: normal;
   text-decoration: none;
   font-size: 1em;
   color: #ffffff;
 }
+
 a:hover {
   color: #8bbfff;
 }
 a:hover span {
   color: #8bbfff;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+
+h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
   padding-bottom: 15px;
   width: 800px;
