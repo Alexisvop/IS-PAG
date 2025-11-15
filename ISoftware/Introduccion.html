@@ -20,22 +20,396 @@
 
     <section>
 		<br><br><br>
-        <h1>2. Introducción</h1>
+        <h1>Módulo 2: Fundamentos de los Requerimientos.
+</h1>
 		<br>
-		<h5>En muchos proyectos de software, los fallos no se deben al código, sino a una mala comprensión de los requerimientos.
-			Esta situación genera pérdidas de tiempo, sobrecostos y productos que no cumplen con las expectativas del cliente.
-            Los requerimientos de software son simplemente una descripción de lo que un programa de software en particular debe hacer.
-            
-			Esta situación genera pérdidas de tiempo, sobrecostos y productos que no cumplen con las expectativas del cliente.
-            Los requerimientos de software son simplemente una descripción de lo que un programa de software en particular debe hacer. Actúan como pautas para que los desarrolladores creen un producto funcional que satisfaga las necesidades de los usuarios. Un ejemplo análogo es, si los cimientos de un edificio son débiles, todo el edificio fallará; lo mismo pasa con el software y sus requerimientos.<br><br>
+		<h5>
 
-			El impacto que presenta la Ingeniería de los Requisitos (InRe) en el desarrollo con éxito de sistemas orientados al cliente no puede ser ignorado. Además, hay una tendencia creciente a considerar que el rol de ingeniero de requisitos es esencialmente independiente y desarrolla una serie de actividades de alta exigencia.<br><br>
+El requerimiento es una noción, característica o descripción de algo que el usuario concibe para ser ejecutado por un sistema con el objetivo de optimizar su proceso de negocio. En un contexto más formal, un requisito es una declaración que identifica un atributo, una capacidad o una característica del sistema que tiene valor y utilidad para el cliente, la organización o el usuario.
+<span class="ref parafrasis">
+    [1]
+    <span class="ref-tooltip">
+        <strong>Serna, M. (2021).</strong>
+        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+        <br>Editorial Universidad del Valle.
+        <br><br>
+        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span> 
+<span class="ref parafrasis">
+    [8]
+    <span class="ref-tooltip">
+        <strong>Wong, S. (2017).</strong>
+        <em>Análisis y requerimientos de software: manual autoformativo interactivo.</em>
+        <br>Universidad Continental.
+        <br><br>
+        <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/4281/1/DO_FIN_103_MAI_UC0939_2018.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span><br><br>
+Los requerimientos actúan como pautas para que los desarrolladores creen un producto funcional que satisfaga las necesidades de los usuarios. También son descripciones de los servicios que un sistema software debe proporcionar y de las limitaciones con las que debe operar.
+<span class="ref parafrasis">
+    [1]
+    <span class="ref-tooltip">
+        <strong>Serna, M. (2021).</strong>
+        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+        <br>Editorial Universidad del Valle.
+        <br><br>
+        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span>
+<br><br>
+<strong>2.1. Propósitos y Beneficios Clave</strong><br>
+El proceso de Ingeniería de Requerimientos (IR) y, en particular, la correcta definición de los requisitos, son cruciales para el éxito del proyecto. La correcta obtención de los requerimientos del sistema es uno de los aspectos clave en la construcción de proyectos de software. Si los cimientos de un edificio son débiles, todo el edificio fallará; lo mismo sucede con el software y sus requerimientos.
+<span class="ref parafrasis">
+    [6]
+    <span class="ref-tooltip">
+        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+        <em>Ingeniería de Requisitos.</em>
+        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+        <br><br>
+        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+            Ver fuente original
+        </a>
+    </span>
+</span><br><br>
+Los principales propósitos y beneficios de una sólida definición de requerimientos son:<br>
+• <strong>Asegurar el Éxito del Producto:</strong> Los requisitos bien entendidos son la base para determinar el éxito del software implementado.
+<span class="ref parafrasis">
+    [6]
+    <span class="ref-tooltip">
+        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+        <em>Ingeniería de Requisitos.</em>
+        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+        <br><br>
+        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+            Ver fuente original
+        </a>
+    </span>
+</span><br>
+• <strong>Alineación y Visión Común:</strong> Permiten que todas las partes interesadas (stakeholders) -clientes, usuarios, desarrolladores y gerentes de proyecto- comprendan y compartan una visión común del sistema. Es necesaria una representación y comprensión clara y consensuada de ellos.
+<span class="ref parafrasis">
+    [1]
+    <span class="ref-tooltip">
+        <strong>Serna, M. (2021).</strong>
+        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+        <br>Editorial Universidad del Valle.
+        <br><br>
+        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span><br>
+• <strong>Guía para el Desarrollo:</strong> Los requerimientos son la referencia principal para las etapas de diseño, implementación, prueba y mantenimiento. Son la base para la elección del lenguaje de programación y de las herramientas para las demás fases del ciclo de vida.
+<span class="ref parafrasis">
+    [1]
+    <span class="ref-tooltip">
+        <strong>Serna, M. (2021).</strong>
+        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+        <br>Editorial Universidad del Valle.
+        <br><br>
+        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span><br>
+• <strong>Criterios de Validación:</strong> Sirven como criterio de evaluación para verificar si el producto final satisface las necesidades planteadas. Además, un requisito es inequívoco, comprobable, medible y necesario para la aceptabilidad del producto final.
+<span class="ref parafrasis">
+    [1]
+    <span class="ref-tooltip">
+        <strong>Serna, M. (2021).</strong>
+        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+        <br>Editorial Universidad del Valle.
+        <br><br>
+        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span><br>
+• <strong>Control del Alcance (Scope Creep):</strong> Ayudan a definir los límites del sistema, evitando agregar funcionalidades no planificadas.
+<span class="ref parafrasis">
+    [9]
+    <span class="ref-tooltip">
+        <strong>Pradel, J. &amp; Raya, J. (2013).</strong>
+        <em>Introducción a la ingeniería del software.</em>
+        <br>Universitat Oberta de Catalunya.
+        <br><br>
+        <a href="https://openaccess.uoc.edu/server/api/core/bitstreams/fab2269c-d5ae-4e93-934a-b0d91601d0f7/content" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span><br>
+• <strong>Gestión de Riesgos y Costos:</strong> Una definición clara de requerimientos reduce la posibilidad de fallos técnicos o malentendidos con el cliente. Los errores cometidos en esta etapa inicial suelen ser los más costosos de corregir en fases posteriores.
+<br><br>
+<strong>2.2. Clasificación de Requerimientos.</strong><br><br>
 
-			Los requerimientos de software son simplemente una descripción de lo que un programa de software en particular debe hacer. Actúan como pautas para que los desarrolladores creen un producto funcional que satisfaga las necesidades de los usuarios. Un ejemplo análogo es, si los cimientos de un edificio son débiles, todo el edificio fallará; lo mismo pasa con el software y sus requerimientos.<br><br>
-
-			Un buen levantamiento y gestión de requerimientos es esencial para el éxito de un proyecto, ya que los errores cometidos en esta etapa inicial suelen ser los más costosos de corregir en fases posteriores. Si los requerimientos son incompletos, ambiguos o contradictorios, el software resultante probablemente no cumplirá con las expectativas de los usuarios, lo que puede llevar a insatisfacción del cliente y fracaso del proyecto.<br><br>
-
-			De acuerdo con ISO (2007) un requisito es una declaración que identifica un atributo, una capacidad o una característica del sistema, que tiene valor y utilidad para el cliente, la organización, el usuario u otra de las partes interesadas . Además, es inequívoca, comprobable, medible y necesaria para la aceptabilidad del producto final . Gestionar requisitos consiste en identificar y sintetizar las funciones requeridas por el sistema, asociadas con el rendimiento y otras medidas de calidad, que proporcionan la base para evaluar las soluciones candidatas y para la verificación del sistema completo . Generalmente, se expresan en un lenguaje técnico útil para estructurar una arquitectura y un diseño inequívocos, consistentes, coherentes, exhaustivos y verificables. Por supuesto, se requiere una estrecha coordinación entre el grupo de trabajo para garantizar una correcta traducción, desde el lenguaje natural de las partes interesadas al formal de los ingenieros, lo que puede garantizar que se mantenga su trazabilidad. Todo esto se traduce en un conjunto de funciones y descripciones de requisitos, en el que se especifican las características de la solución propuesta que se pueden verificar y validar.<br><br>
+De forma general, los requisitos se clasifican en funcionales y no funcionales. Esta clasificación es la más frecuente en la literatura de Ingeniería de Software.
+<span class="ref parafrasis">
+    [1]
+    <span class="ref-tooltip">
+        <strong>Serna, M. (2021).</strong>
+        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+        <br>Editorial Universidad del Valle.
+        <br><br>
+        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span> 
+<span class="ref parafrasis">
+    [6]
+    <span class="ref-tooltip">
+        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+        <em>Ingeniería de Requisitos.</em>
+        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+        <br><br>
+        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+            Ver fuente original
+        </a>
+    </span>
+</span><br><br>
+En el contexto de los Requisitos de la Solución (aquellos que describen las características de la solución), se distinguen claramente los Requisitos Funcionales y No Funcionales, especialmente cuando los requisitos describen una solución de desarrollo de software.
+<span class="ref parafrasis">
+    [8]
+    <span class="ref-tooltip">
+        <strong>Wong, S. (2017).</strong>
+        <em>Análisis y requerimientos de software: manual autoformativo interactivo.</em>
+        <br>Universidad Continental.
+        <br><br>
+        <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/4281/1/DO_FIN_103_MAI_UC0939_2018.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span>
+<br><br>
+<strong>2.2.1. Requerimientos Funcionales (RF).</strong><br>
+Los Requerimientos Funcionales (RF) describen el comportamiento observable del sistema bajo diversas condiciones.
+<span class="ref parafrasis">
+    [5]
+    <span class="ref-tooltip">
+        <strong>Wiegers, K. &amp; Beatty, J.(2013).</strong>
+        <em>Software requirements (3ª ed.).</em>
+        <br>Microsoft Press.
+        <br><br>
+        <a href="https://api.pageplace.de/preview/DT0400.9780735679641_A23707999/preview-9780735679641_A23707999.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span><br><br>
+• <strong>Definición:</strong> Los RF son enunciados acerca de los servicios que el sistema debe proveer. Describen el comportamiento y los datos que el sistema administrará. También definen las funciones que el sistema y sus componentes deben ejecutar.
+<span class="ref parafrasis">
+    [1]
+    <span class="ref-tooltip">
+        <strong>Serna, M. (2021).</strong>
+        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+        <br>Editorial Universidad del Valle.
+        <br><br>
+        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span> 
+<span class="ref parafrasis">
+    [6]
+    <span class="ref-tooltip">
+        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+        <em>Ingeniería de Requisitos.</em>
+        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+        <br><br>
+        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+            Ver fuente original
+        </a>
+    </span>
+</span> 
+<span class="ref parafrasis">
+    [8]
+    <span class="ref-tooltip">
+        <strong>Wong, S. (2017).</strong>
+        <em>Análisis y requerimientos de software: manual autoformativo interactivo.</em>
+        <br>Universidad Continental.
+        <br><br>
+        <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/4281/1/DO_FIN_103_MAI_UC0939_2018.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span><br>
+• <strong>Interacción:</strong> Describen una interacción entre el sistema y su ambiente. Describen cómo debe comportarse el sistema ante un estímulo.
+<span class="ref parafrasis">
+    [12]
+    <span class="ref-tooltip">
+        <strong>Cristá, M. (2024).</strong>
+        <em>Introducción a la Ingeniería de Requerimientos.</em>
+        <br>Facultad de Ciencias Exactas, Ingeniería y Agrimensura.
+        <br><br>
+        <a href="https://www.fceia.unr.edu.ar/~mcristia/publicaciones/ingreq-a.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+            Ver fuente original
+        </a>
+    </span>
+</span><br>
+• <strong>Forma de Expresión:</strong> Se expresan en la forma general de: "el sistema deberá hacer (algún requisito)”.
+<span class="ref parafrasis">
+    [1]
+    <span class="ref-tooltip">
+        <strong>Serna, M. (2021).</strong>
+        <em>Gestión de la ingeniería de requisitos integrando principios del pensamiento complejo.</em>
+        <br>Editorial Universidad del Valle.
+        <br><br>
+        <a href="https://dialnet.unirioja.es/descarga/libro/877217.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span><br>
+• <strong>Tipos de RF:</strong> Los requerimientos funcionales se pueden dividir en:<br>
+◦ <strong>Requerimientos de Usuario:</strong> Son declaraciones en lenguaje natural y diagramas, de los servicios que se espera que el sistema provea y de las restricciones bajo las cuales debe operar.
+<span class="ref parafrasis">
+    [6]
+    <span class="ref-tooltip">
+        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+        <em>Ingeniería de Requisitos.</em>
+        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+        <br><br>
+        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+            Ver fuente original
+        </a>
+    </span>
+</span><br>
+◦ <strong>Requerimientos del Sistema:</strong> Establecen con detalle los servicios y restricciones del sistema. El documento que los contiene (especificación funcional) tiene que definir con exactitud lo que se implementará.
+<span class="ref parafrasis">
+    [6]
+    <span class="ref-tooltip">
+        <strong>Cueva, S. Sucunuta, M. (2014).</strong>
+        <em>Ingeniería de Requisitos.</em>
+        <br>Universidad Técnica Particular de Loja Págs. 53-54.
+        <br><br>
+        <a href="https://gc.scalahed.com/recursos/files/r161r/w24792w/IRADS/INGRequisitos.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+            Ver fuente original
+        </a>
+    </span>
+</span>
+<span class="ref parafrasis">
+    [10]
+    <span class="ref-tooltip">
+        <strong>Sommerville, I. (2011).</strong>
+        <em>Ingeniería de Software.</em>
+        <br>PEARSON EDUCACIÓN.
+        <br><br>
+        <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+            Ver fuente original
+        </a>
+    </span>
+</span><br>
+• <strong>Ejemplos de RF:</strong><br>
+◦ El sistema debe permitir el registro de todos los clientes de la tienda.<br>
+◦ El sistema debe permitir la generación de la boleta de venta y factura.<br>
+◦ El módulo deberá generar el tipo de planilla y la selección de empleados.<br>
+◦ A cada pedido se le deberá asignar un identificador único (ID_PEDIDO).
+<span class="ref parafrasis">
+    [8]
+    <span class="ref-tooltip">
+        <strong>Wong, S. (2017).</strong>
+        <em>Análisis y requerimientos de software: manual autoformativo interactivo.</em>
+        <br>Universidad Continental.
+        <br><br>
+        <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/4281/1/DO_FIN_103_MAI_UC0939_2018.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+        Ver fuente original
+        </a>
+    </span>
+</span><br>
+◦ El usuario debe poder iniciar sesión con su correo y contraseña.
+<br><br>
 
 			<br><br>
 			<div style="text-align: center;">
