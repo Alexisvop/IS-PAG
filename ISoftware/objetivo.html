@@ -523,7 +523,26 @@ un error durante la IR, puede costar $10 durante la programación y hasta $200 d
         </a>
     </span>
 </span>
-
+<br><br>
+<strong>2. El Desafío de la Elicitación y las Técnicas</strong><br>
+La obtención de requerimientos es un desafío complejo. Los requerimientos no siempre son fáciles de obtener, pues los usuarios pueden no tener claras sus necesidades, no saber expresarlas correctamente, u omitir información que consideran "obvia".<br><br>
+El reto es mayor con los Requerimientos No Funcionales (RNF), que definen la calidad y las restricciones del sistema. La comunidad de IR no tiene consenso sobre su definición o clasificación, y la obtención tardía de RNF puede llevar a grandes, complejos y costosos cambios, haciendo que todo el sistema sea inútil si no se cumplen.
+<span class="ref parafrasis">
+    [10]
+    <span class="ref-tooltip">
+        <strong>Sommerville, I. (2011).</strong>
+        <em>Ingeniería de Software.</em>
+        <br>PEARSON EDUCACIÓN.
+        <br><br>
+        <a href="https://gc.scalahed.com/recursos/files/r161r/w25469w/ingdelsoftwarelibro9_compressed.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tooltip-link"
+        onclick="event.stopPropagation()">
+            Ver fuente original
+        </a>
+    </span>
+</span>
 			<br><br>
 			<div style="text-align: center;">
 				<figure>
@@ -537,17 +556,26 @@ un error durante la IR, puede costar $10 durante la programación y hasta $200 d
     </section>
 
 	<script>
-		const sections = document.querySelectorAll("section");
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add("visible");
-			}
-			});
-		}, { threshold: 0.2 });
+    const sections = document.querySelectorAll("section");
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.05 });  
 
-		sections.forEach(section => observer.observe(section));
-	</script>
+    sections.forEach(section => observer.observe(section));
+    
+    setTimeout(() => {
+        sections.forEach(section => {
+            if (!section.classList.contains('visible')) {
+                section.classList.add('visible');
+            }
+        });
+    }, 100);  
+</script>
 
 </body>
 </html>
